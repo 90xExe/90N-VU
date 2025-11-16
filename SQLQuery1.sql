@@ -1,11 +1,6 @@
 ﻿CREATE DATABASE PRESENTATION;
 USE PRESENTATION;
 
--- ==========================================
--- 🎧 SPOTIFY DATABASE PROJECT (IDs are manual)
--- Made by: Noyon
--- Each table now has ONE primary key column (plain INT)
--- ==========================================
 
 -- 1️⃣ USERS TABLE
 CREATE TABLE Users (
@@ -183,3 +178,4 @@ CREATE TABLE Training_Session (
     Completion_Date DATE,
     FOREIGN KEY (Staff_ID) REFERENCES Staff(Staff_ID)
 );
+
