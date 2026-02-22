@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 420px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+        }
+
+        input[type=submit] {
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.9;
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                margin: 30px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>User Registration</h2>
+
+<form action="process.php" method="post">
+
+    <label>Full Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <label>Gender</label>
+    <select name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <label>Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <label>Phone</label>
+    <input type="text" name="phone" required>
+
+    <input type="submit" value="Register">
+
+</form>
+</div>
+
+</body>
+</html>
