@@ -1,6 +1,7 @@
 Its a login page for CSE 3210 Assignment
 
 go to C:\xampp\htdocs\<foldername>
+
 link: http://localhost/<foldername>/index.html
 
 
